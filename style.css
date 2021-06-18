@@ -1,0 +1,67 @@
+.catgame{
+    width: 1000px;
+    height: 450px;
+    border: 2px solid black;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+
+#cat{
+    width: 125px;
+    height: 150px;
+    position: relative;
+    background-image: url(cat.gif);
+    background-size: 125px 150px;
+    top: 300px;
+    left: 25px;
+}
+
+.jump{
+    animation: jump 0.8s linear;
+}
+
+
+@keyframes jump{
+    0%{top: 300px;}
+    30%{top: 200px;}
+    50%{top: 100px;}
+    80%{top: 200px;}
+    100%{top: 300px;}
+}
+
+#mouse{
+    width: 97px;
+    height: 53px;
+    position: relative;
+    top: 235px;
+    left: 825px;
+
+    background-image: url('mouse2new.png');
+    background-size: 97px 53px;
+    animation:block 1.8s infinite linear;
+}
+/*
+#mouse2{
+    width: 97px;
+    height: 53px;
+    position: relative;
+    top: 190px;
+    left: 825px;
+
+    background-image: url('mouse2new.png');
+    background-size: 97px 53px;
+    animation:block 3.5s infinite linear;
+}
+
+
+.block{
+    animation:block 1.5s infinite linear;
+}
+*/
+
+@keyframes block{
+    0%{left:825px;}
+    /* 50%{left:500px;} */
+    100%{left: 0px;}
+}
+
